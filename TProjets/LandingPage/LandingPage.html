@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!--.Заголовок.страницы,контейнер.для.других.важных.данных.(не.отображаается).-->
+    <head>
+        <!--Кодировка.страницы-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Подключаем.CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Подчлючаем.штриф.-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <!--Заголовок страницы.в.браузере-->
+        <title>Document</title>
+    </head>
+    <!--Тело.станицы.отображаемое-->
+    <body>
+        <!--Отображаемое.заголовок.страницы.-->
+        <header>
+            <div class="logo">
+                <span class="logo__text"><img src="images/Vector-2.png" alt="Toxin image" srcset=""></span>
+                <span class="logo__img"><img src="images/TOXIN.png" alt="" srcset=""></span>
+            </div>
+            <div class="nav">
+                <div class="nav__list">
+                    <div class="nav__about">
+                        <a class="nav__text" href="#">О нас</a>
+                        <span class="nav__arrow"><ion-icon name="chevron-down-outline"></ion-icon></span>
+                    </div>
+                    <div class="nav__service">
+                        <a href="#">Услуги</a>
+                    </div>
+                    <div class="nav__vacancies">
+                        <a href="#">Вакансии</a>
+                    </div>
+                    <div class="nav__news">
+                        <a href="#">Новости</a>
+                    </div>
+                    <div class="nav__agreement">
+                        <a class="nav__text" href="#">Соглашение</a>
+                        <span class="nav__arrow"><ion-icon name="chevron-down-outline"></ion-icon></span>
+                    </div>
+                    <div class="nav__enter">
+                        <a href="#">Войти</a>
+                    </div>
+                    <div class="nav__register">
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Изображение landing page-->
+        <section>
+            <img src="images/landing page.png" alt="landing page">
+            <div class="form">
+                <!--Заголовок формы-->
+                <div class="form_title">Найдём номера под ваши желания</div>
+                <form action="#" class="form_content">
+                    <!--данные о датах прибытия и выезда гостей-->
+                    <div class="form_dates">
+                        <div class="form_box">
+                            <div class="title">Прибытие</div>
+                            <div class="content">
+                                <div contenteditable="false" data-placeholder="ДД.ММ.ГГГГ" class="placeholder"></div>
+                                <div class="icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="form_box">
+                            <div class="title">Прибытие</div>
+                            <div class="content">
+                                <div contenteditable="false" data-placeholder="ДД.ММ.ГГГГ" class="placeholder"></div>
+                                <div class="icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Количество гостей-->
+                    <div class="form_box">
+                        <div class="title">Гости</div>
+                        <div class="content">
+                            <div contenteditable="false" data-placeholder="Сколько гостей" class="placeholder"></div>
+                            <div class="icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                        </div>
+                    </div>
+                    <!--кнопка отправки-->
+                    <div class="form_btn">
+                        <button type="submit" value="Подобрать номер">
+                            <span class="form_btn_text">Подобрать номер</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Нижее лого и навигации-->
+        <article>
+            <div class="article">
+                <div class="article__logo">
+                    <div class="logo">
+                        <span class="logo__text"><img src="images/Vector-2.png" alt="Toxin image" srcset=""></span>
+                        <span class="logo__img"><img src="images/TOXIN.png" alt="" srcset=""></span>
+                    </div>
+                    <div class="article__logo-description">Бронирование номеров в лучшем<br> отеле 2019 года по версии <br> ассциации &lt;&lt;Отельные взгляды&gt;&gt;</div>
+                </div>
+                <div class="article__navigation">
+                    <div class="article__title">Навигация</div>
+                    <div class="article__about">O Hac</div>
+                    <div class="article__news">Новости</div>
+                    <div class="article__service">Служба поддержки</div>
+                    <div class="article__service">Услуги</div>
+                </div>
+                <div class="article__about">
+                    <div class="article__title">O нас</div>
+                    <div class="article__about">О сервисе</div>
+                    <div class="article__news">Наш команда</div>
+                    <div class="article__vacation">Вакансии</div>
+                    <div class="article__service">Инвесты</div>
+                </div>
+                <div class="article__support-service">
+                    <div class="article__title">Служба поддержки</div>
+                    <div class="article__agreement">Соглашение</div>
+                    <div class="article__chat">Сообщества</div>
+                    <div class="article__link-with-us">Связь с нами</div>
+                </div>
+                <div class="article__subscription">
+                    <div class="article__title">Поддержка</div>
+                    <div class="article__description">
+                        <p>Получайте специальные<br> предложенния и новости сервиса</p>
+                    </div>
+                    <div class="article__box">
+                        <input class="article__input" type="text" placeholder="Email">
+                        <label for="article__label">
+                            <a href="#"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- разделительный элемент -->
+            <div class="separator"></div>
+        </article>
+        <!--Отображаемое.футер.страницы.-->
+        <footer>
+            <div class="footer">
+                <div class="footer__copyright"><p>copyright &#169; 2018 Toxin отель право зашищены</p></div>
+                <div class="footer__social-media">
+                    <span class="footer__facebook"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="footer__twitter"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span class="footer__instagram"><ion-icon name="logo-instagram"></ion-icon></span>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

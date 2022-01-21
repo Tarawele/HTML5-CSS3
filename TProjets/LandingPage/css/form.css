@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1F2041;
+    opacity: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #2041f0, #3955);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    border-radius: 4px;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+    width: 380px;
+}
+    .form_title{
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: bold;
+    }
+    .form > .form_content{
+        height: 290px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+        .form_dates{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-flow: row nowrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .title{
+            font-size: 12px;
+            font-weight: bold;
+            /* line-height: 15px; */
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        .content{
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:space-between;
+            align-items: center;
+            /* width:calc(100% / 2 20px); */
+            height: 44px;
+            border-radius: 4px;
+            outline: none;
+        }
+        .placeholder:empty:before{
+            content: attr(data-placeholder);
+            color: rgba(31, 32, 65, 0.75);
+            font-size: 14px;
+        }
+        select{
+            height: 44px;
+            width: 150px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            color: #1F2041;
+            opacity: 75%;
+            border: 1px solid #1F204140;
+            outline: none;
+        }
+
+        .form_btn{
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: column;
+            border: none;
+            outline: none;
+        }
+        .form_dates .form_box{
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 48%;
+        }
+            .form_btn button{
+                height: 44px;
+                border-radius: 44px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: center;
+                text-transform: uppercase;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: none;
+            }
+            .form_dates .form_box button{
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                span{
+                    color: #fff;
+                }
+                span{
+                    width: 90%;
+                }
+                ion-icon{
+                    font-size: 24px;
+                    height: 24px;
+                    width: 24px;
+                    flex-direction: column;
+                    align-self: center;
+                    color: rgba(31, 32, 65, 0.5);
+                }
+                    .form_dates .form_box button input{
+                        border: none;
+                    }
+                    .form_content .form_btn button > ion-icon{
+                        color: #fff;
+                    }
+

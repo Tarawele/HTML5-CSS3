@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+
+}
+/* свойтсва.заголовок.страницы. */
+header{
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: white;
+    align-items: center;
+    color: #1F2041;
+}
+/* свойства.лого*/
+.logo{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo__img{
+    margin-left: 12.5px;
+}
+
+/* свойство.футер */
+article, footer{
+    color: #1F2041;
+    opacity: 75%;
+    font-size: 14px;
+}
+/* свойство nav__list который находится в элементе nav bar в header */
+.nav__list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    .nav__list a{
+        text-decoration: none;
+        color: #1F2041;
+        opacity: 50%;
+    }
+    .nav__list .nav__register{
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border: none;
+        height: 36px;
+        width: 196px;
+        margin-left: 20px;
+        border-radius: 36px;
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;    
+    }
+    .nav__list .nav__register a{        
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    .nav__list .nav__enter{
+        border: solid 1px #8BA4F9;
+        height: 34px;
+        width: 87px;
+        border-radius: 22px;
+        margin-left: 20px;
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__list .nav__enter a{        
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 400px;
+        color: #1F2041;
+        opacity: 50%; 
+    }
+
+    .nav .nav__list .nav__agreement{
+        font-family: Montserrat, sans-serif;
+        margin-left: 20px;
+        display: inline-flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    .nav .nav__list .nav__arrow{
+        color: #1F2041;
+        opacity: 50%;
+        height: 21px;
+        width: 24px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav .nav__list .nav__news{
+        font-family: Montserrat, sans-serif;
+        margin-left: 20px;
+    }
+    .nav .nav__list .nav__vacancies{
+        font-family: Montserrat, sans-serif;
+        margin-left: 20px;
+    }
+    .nav .nav__list .nav__service{
+        font-family: Montserrat, sans-serif;
+        margin-left: 20px;
+    }
+    .nav .nav__list .nav__about{
+        font-family: Montserrat, sans-serif;
+        margin-left: 20px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav .nav__list .nav__about .nav__arrow{
+        font-family: Montserrat, sans-serif;
+        width: 24px;
+        height: 21px;
+    }
+/* свойство изображение landing page */
+section img{
+    width: 100%;
+    height: 850px;
+}
+/*Свойство форм на главном изображении landing page*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/**{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1F2041;
+    opacity: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #2041f0, #3955);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+
+.form{
+    border-radius: 4px;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+    width: 320px;
+    position: absolute;
+    /* height: 374px; */
+    left: 140px;
+    top: 140px;
+}
+    .form_title{
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .form > .form_content{
+        height: 200px;
+        /* width: 320px; */
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+        .form_dates{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-flow: row nowrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .title{
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        .content{
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:space-between;
+            align-items: center;
+            height: 44px;
+            border-radius: 4px;
+            outline: none;
+        }
+        .placeholder:empty:before{
+            content: attr(data-placeholder);
+            color: rgba(31, 32, 65, 0.75);
+            font-size: 14px;
+        }
+        select{
+            height: 44px;
+            width: 150px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            color: #1F2041;
+            opacity: 75%;
+            border: 1px solid #1F204140;
+            outline: none;
+        }
+
+        .form_btn{
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: column;
+            border: none;
+            outline: none;
+        }
+        .form_dates .form_box{
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 48%;
+        }
+            .form_btn button{
+                height: 44px;
+                border-radius: 44px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: center;
+                text-transform: uppercase;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: none;
+            }
+            .form_dates .form_box button{
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                span{
+                    color: #fff;
+                }
+                span{
+                    width: 90%;
+                }
+                ion-icon{
+                    font-size: 24px;
+                    height: 24px;
+                    width: 24px;
+                    flex-direction: column;
+                    align-self: center;
+                    color: rgba(31, 32, 65, 0.5);
+                }
+                    .form_dates .form_box button input{
+                        border: none;
+                    }
+                    .form_content .form_btn button > ion-icon{
+                        color: #fff;
+                    }
+
+
+/* свойства нижее лого и навигации */
+article .article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 100px;
+}
+    article .article > *{
+        display: inline flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        padding: 0 10px;
+    }
+    article .article__title{
+        font-weight: 900;
+    }
+    article .article__subscription .article__box{
+        border: solid 1px #8BA4F9;
+        height: 29px;
+        width: 260px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;    
+    }
+    
+    article .article__subscription .article__box > input{
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 90%;
+        font-family:'Montserrat', sans-serif;
+    }
+    article .article__subscription .article__box ion-icon{
+        color: rgba(188, 156, 255, 1);
+        color: rgba(139, 164, 249, 1);
+        width: 24px;
+        height: 24px;
+    }
+/* свойтва разделительный элемент */
+.separator{
+    border-bottom: solid 1px rgba(0, 0, 0,0.2);
+}
+/* свойства футер */
+footer .footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+    footer .footer__social-media{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    footer .footer__social-media > *{
+        margin-left: 45px;
+        color: rgba(188, 156, 255, 1);
+        color: rgba(139, 164, 249, 1);
+    }
+
+
+
+
+    
+
+
+      
