@@ -1,0 +1,110 @@
+-var pageTitle = 'online TV'
+
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    style
+      include styles/normilize.css
+      include styles/style.scss
+  body
+    include modules/header.pug
+
+    section.section
+      .section__image
+        img(src="images/banner/banner.svg", alt="#main-img-banner").banner-img__main
+      .banner
+        h1.banner__title Zack Snyder's Justice League
+        .banner-info
+            span.banner-info__year 2021
+            span.banner-info__age 18+
+            span.banner-info__duration 4h 2min
+            span.banner-info__rating 8.8
+        p.banner__text.
+            Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+        .banner-control
+          button.banner-control__btn.banner-control__btn-watch Watch
+          button.banner-control__btn.banner-control__btn-more More information
+    article
+      .container
+        .trending
+          h2.trending-tvshows__title
+            a(href="#trendtvshows").trending-tvshows-title Trending TV Shows
+          .tvshows
+            .tvshows-item
+              a(href="#").tvshows__link
+                img(src="images/trending/1.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/2.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/3.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/4.svg", alt="After").tvshows__img         
+              a(href="#").tvshows__link
+                img(src="images/trending/5.svg", alt="After").tvshows__img         
+              a(href="#").tvshows__link
+                img(src="images/trending/6.svg", alt="After").tvshows__img       
+          h2.trending-tvshows__title
+            a(href="#trendtvshows").trending-tvshows-title Trending TV Shows
+          .tvshows
+            .tvshows-item
+              a(href="#").tvshows__link
+                img(src="images/trending/8.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/9.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/10.svg", alt="After").tvshows__img          
+              a(href="#").tvshows__link
+                img(src="images/trending/11.svg", alt="After").tvshows__img         
+              a(href="#").tvshows__link
+                img(src="images/trending/12.svg", alt="After").tvshows__img         
+              a(href="#").tvshows__link
+                img(src="images/trending/13.svg", alt="After").tvshows__img
+          button.see See more
+          .games
+            .games__title
+              h2.popular__title-tile Popular Genres
+            .games__item
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game46.png", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game47.svg", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game48.svg", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game49.svg", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game50.svg", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game51.svg", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game52.png", alt="#").games__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").games__link
+                img(src="images/trending/game53.svg", alt="#").games__img
+          .actors
+            .actors__title
+              h2.actors__title-title Popular Actors &amp; Directors
+            .actors__photo
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (1).svg", alt="").actors__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (2).svg", alt="").actors__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (3).svg", alt="").actors__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (4).svg", alt="").actors__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (5).svg", alt="").actors__img
+              a(href="http://", target="_blank", rel="noopener noreferrer").actors__link
+                img(src="images/trending/actors (6).svg", alt="").actors__img
+          .coming-soon
+            .coming-soon_img
+              img(src="images/trending/Big.Buck.Bunny.-.Opening1.svg", alt="").coming-soon__img-Buck
+            .coming-soon__content
+              img(src="images/trending/2021.svg", alt="").coming-soon__content-2021
+              a(href="#coming soon").coming-soon__link Coming Soon ...
+          .register
+            .resgister-text
+              h2.register-text__content Are You New Here ? Don&apos;t wait, Register Now.
+            button.register-button Register now
+    include modules/footer.pug
