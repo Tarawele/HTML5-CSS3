@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@0;1&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
 .container{
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     background-color: #c4c4c4;
@@ -9,30 +13,33 @@ header{
     margin: 0;
 }
 header h1{
-    font-family: 'Times New Roman', Times, serif;
     color: aqua;
     font-variant: small-caps;
     width: 100%;
 }
-header h2, .education h2, .experiences h2, .favourites h2, footer h2{
-    font-family: 'Times New Roman', Times, serif;
+header h2, .education h2, .experiences h2, .favorites h2, footer h2{
     color: purple;
     font-variant: small-caps;
     width: 100%;
 }
 h3{
-    border: 2px dashed yellow;
+    border-top: 2px dashed yellow;
+    border-bottom: 2px dashed yellow;
     width: 100%;
 }
-.education, .experiences, .favourites{
+.education, .experiences, .favorites{
     border: 4px solid yellow;
     padding:0px 40px;
     margin: 10px;
+    text-transform: capitalize;
 }
-.education > div, .experiences > div, .favourites div{
+/* .education > div, .experiences > div, .favourites div{
     border: 1px aqua solid;
-}
-.education > div h4, .experiences > div  h4, .favourites div h4{
+} */
+.education > div h4, .experiences > div  h4, .favorites div h4{
     border-bottom: 2px solid aqua;
     padding-bottom: 10px;
+}
+footer{
+    text-transform: capitalize;
 }
