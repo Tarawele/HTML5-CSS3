@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+       var parameters = {
+    target: "#idMyfunction",
+    data: [{
+        fn: "sin(x)",
+        color: "red"
+    }],
+    xAxis: {domain: [-1, 1]},
+    yAxis: {domain: [0, 2*Math.PI]}
+};
+
+function plot(){
+    var f = document.querySelector("#graph").value;
+    var xmin = document.querySelector("#xmin").value;
+    var xmax = document.querySelector("#xmax").value;
+    var ymin = document.querySelector("#ymin").value;
+    var ymax = document.querySelector("#ymax").value;
+    var color = document.querySelector("#color").value;
+
+    parameters.data[0].fn = f;
+    parameters.xAxis.domain = [xmin, xmax];
+    parameters.yAxis.domain = [ymin, ymax];
+    parameters.data[0].color = color;
+    
+    functionPlot(parameters);
+}
+
+
+    </script>
+    <script src="https://d3js.org/d3.v3.min.js"> </script>
+    <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"> </script>
+    <style>
+       body {
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-plot {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 1rem;
+  min-width: 11.5%;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 5px #c4c4;
+          box-shadow: 5px 5px 5px #c4c4;
+  border: 0.5rem solid #cc44cc44;
+  border-radius: 0.5rem;
+  float: left;
+}
+
+.form .value {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form .color {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#idMyfunction {
+  min-width: 39%;
+  display: inline-block;
+  -webkit-box-shadow: 5px 5px 5px #c4c4;
+          box-shadow: 5px 5px 5px #c4c4;
+  border: 0.5rem solid #cc44cc44;
+  border-radius: 0.5rem;
+  float: left;
+}
+/*# sourceMappingURL=plot.css.map */
+    </style>
+    <title>Plot function in JS</title>
+  </head>
+  <body>
+    <div class="section-plot" onload="plot();">
+      <section class="form" id="plot-settings"> 
+        <h2>Interactive function plotter</h2>
+        <label for="xmin">xMin: Value:</label>
+        <input class="value" type="number" name="xmin" id="xmin" value="0" step="0.5" oninput="plot();">
+        <label for="xmax">xMax: Value:</label>
+        <input class="value" type="number" name="xmax" id="xmax" value="0" step="0.5" oninput="plot();">
+        <label for="ymin">yMin: Value: </label>
+        <input class="value" type="number" name="ymin" id="ymin" value="0" step="0.5" oninput="plot();">
+        <label for="ymax">yMax: Value:</label>
+        <input class="value" type="number" name="ymax" id="ymax" value="0" step="0.5" oninput="plot();">
+        <label for="color">Color: value:</label>
+        <input class="color" type="color" name="color" id="color" onchange="plot();">
+        <label for="function">Function to plot(graph):</label>
+        <input class="value" type="text" name="function" id="graph" value="sin(x)" onchange="plot();">
+        <button onclick="plot();">Plot it</button>
+      </section>
+      <div id="idMyfunction"></div>
+      <div class="div" clear="both"></div>
+    </div>
+  </body>
+</html>

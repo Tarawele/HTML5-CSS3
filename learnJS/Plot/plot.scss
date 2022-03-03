@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+.section-plot{
+    width: 80%;
+    margin: 0 auto;
+}
+@mixin countour {
+    box-shadow: 5px 5px 5px #c4c4;
+    border: 0.5rem solid #cc44cc44;
+    border-radius: 0.5rem;
+    float: left;
+}
+.form{
+    padding: 1rem;
+    min-width: 11.5%;
+    margin: 0 auto;
+    @include countour();
+    .value{
+        width: 100%;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .color{
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+}
+#idMyfunction{
+    min-width: 39%;
+    display: inline-block;
+    @include countour();
+}

@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script 
+            include plot.js
+        script(src="https://d3js.org/d3.v3.min.js") 
+        script(src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js") 
+        style 
+            include plot.css 
+        title Plot function in JS
+    body
+        .section-plot(onload="plot();")
+            section.form#plot-settings 
+                h2 Interactive function plotter
+                label(for="xmin") xMin: Value:
+                input(type="number", name="xmin" id="xmin" value=0 step=0.5 oninput="plot();").value
+                label(for="xmax") xMax: Value:
+                input(type="number", name="xmax" id="xmax" value=0 step=0.5 oninput="plot();").value
+                label(for="ymin") yMin: Value: 
+                input(type="number", name="ymin" id="ymin" value=0 step=0.5 oninput="plot();").value
+                label(for="ymax") yMax: Value:
+                input(type="number", name="ymax" id="ymax" value=0 step=0.5 oninput="plot();").value
+                label(for="color") Color: value:
+                input(type="color", name="color" id="color" onchange="plot();").color
+                label(for="function") Function to plot(graph):
+                input(type="text", name="function" id="graph" value="sin(x)" onchange="plot();").value
+                button(onclick="plot();") Plot it
+            //- #plot
+            #idMyfunction
+            .div(clear="both")

@@ -1,0 +1,88 @@
+body {
+  position: relative;
+}
+
+p {
+  display: block;
+  max-width: 16em;
+  margin: 0 auto;
+  border: 2px solid navy;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 4px;
+  border-radius: 10em;
+  background-color: #c4c4c4;
+  -webkit-box-shadow: 2px 5px #272764;
+          box-shadow: 2px 5px #272764;
+  font-family: sans-serif;
+}
+
+button:hover {
+  color: blue;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+p {
+  -webkit-animation-name: diagonal-slide;
+          animation-name: diagonal-slide;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  position: absolute;
+}
+
+@-webkit-keyframes diagonal-slide {
+  from {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes diagonal-slide {
+  from {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

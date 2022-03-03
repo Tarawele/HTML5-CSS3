@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-plot {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 1rem;
+  min-width: 11.5%;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 5px #c4c4;
+          box-shadow: 5px 5px 5px #c4c4;
+  border: 0.5rem solid #cc44cc44;
+  border-radius: 0.5rem;
+  float: left;
+}
+
+.form .value {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form .color {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#idMyfunction {
+  min-width: 39%;
+  display: inline-block;
+  -webkit-box-shadow: 5px 5px 5px #c4c4;
+          box-shadow: 5px 5px 5px #c4c4;
+  border: 0.5rem solid #cc44cc44;
+  border-radius: 0.5rem;
+  float: left;
+}
+/*# sourceMappingURL=plot.css.map */
