@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondDegreeEquation</title>
+    <script>
+       function root(){
+    var a = document.querySelector("#value_a").value;
+    var b = document.querySelector("#value_b").value;
+    var c = document.querySelector("#value_c").value;
+
+    var delta = (b*b - 4*a*c);
+
+    if (delta > 0){
+        var showRoot = document.querySelector(".showRoot");
+        showRoot.innerHTML = "<p> Delta is positive and we have two roots </p>X1 = " + (((b*-1)-(Math.sqrt(delta)/2*a))/2*a) + "<br>X2 = " + (((b*-1)+(Math.sqrt(delta)/2*a))/2*a);
+    }
+    else if (delta == 0){
+        var showRoot = document.querySelector(".showRoot");
+        showRoot.innerHTML = "<p> Delta is equal zero and we have one root </p>X = " + (((b*-1)/2*a));
+    }
+    else{
+        var showRoot = document.querySelector(".showRoot");
+        showRoot.innerHTML = "<p> Delta is less zero means we don't have solution in R </p>"
+    }
+}
+    </script>
+    <style>
+       body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #c4c4;
+  padding: 15px;
+}
+
+.container > * {
+  width: 99%;
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="value_a">Enter the value of a: </label>
+      <input type="number" name="value_a" id="value_a" value="1"><br>
+      <label for="value_b">Enter the value of b: </label>
+      <input type="number" name="value_b" id="value_b" value="2"><br>
+      <label for="value_c">Enter the value of c: </label>
+      <input type="number" name="value_c" id="value_c" value="-1"><br>
+      <button onclick="root();">Find Roots.</button>
+      <div class="showRoot"></div>
+    </div>
+  </body>
+</html>

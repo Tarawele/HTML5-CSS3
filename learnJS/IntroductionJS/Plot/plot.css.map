@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,KAAK;CAC1B",
+    "sources": [
+        "plot.scss"
+    ],
+    "names": [],
+    "file": "plot.css"
+}

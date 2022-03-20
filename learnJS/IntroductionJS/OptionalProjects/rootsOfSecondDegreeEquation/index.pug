@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title SecondDegreeEquation
+        script 
+            include main.js
+        style 
+            include style.css
+    body
+        .container
+            label(for="value_a") Enter the value of a: 
+            input(type="number", name="value_a", id="value_a", value=1)
+            br
+            label(for="value_b") Enter the value of b: 
+            input(type="number", name="value_b", id="value_b" value=2)
+            br
+            label(for="value_c") Enter the value of c: 
+            input(type="number", name="value_c", id="value_c" value=-1)
+            br
+            button(onclick="root();") Find Roots.
+            .showRoot

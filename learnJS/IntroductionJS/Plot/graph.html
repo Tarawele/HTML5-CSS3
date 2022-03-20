@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+       var parameters = {
+    target: "myFunction",
+    data: [{
+        fn: "sin(x)",
+        color: "red"
+    }],
+    grid: true,
+    yAxis: {domain: [-1, 1]},
+    xAxis: {domain: [0, 2*Math.PI]}
+};
+
+function plot() {
+    functionPlot(parameters);
+}
+    </script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+    <style>
+       body {
+  padding: 0;
+  margin: 0;
+}
+
+.plot {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #c4c4;
+}
+/*# sourceMappingURL=graph.css.map */
+    </style>
+    <title>plot</title>
+  </head>
+  <body onload="plot();">
+    <div id="plot">
+      <div id="myFunction"></div>
+    </div>
+  </body>
+</html>
